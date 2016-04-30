@@ -32,7 +32,17 @@
 (LLC y MAC).\\
 
 \item Mencione algunas ventajas y desventajas del modelo OSI de ISO\\
-    
+    -Ventajas:\\
+        -Facilita un problema complejo ya que divide este en partes más simples y ordenadas\\
+        -Evita los problemas de incompatibilidad\\
+        -Los cambios de una capa no afectan las demás capas y éstas pueden evolucionar más rápido\\
+    -Desventajas:\\
+        -Las capas contienen demasiadas actividades redundantes, por ejemplo, el control de errores se integra en \\
+         casi todas las capas siendo que tener un único control en la capa de aplicación o presentación sería suficiente\\
+        -La gran cantidad de código que fue necesario para implantar el modelo OSI y su consecuente lentitud hizo que \\
+         la palabra OSI fuera interpretada como "calidad pobre" contrastado con el modelo TCP/IP que fue mucho mas efectivo.\\
+        -Tecnología desactualizada\\
+        
 \item Mencione algunas ventajas y desventajas del modelo de referencia TCP/IP híbrido.\\
 
 \item Indique la diferencia entre un estándar de  facto y un estándar de  jure\\
@@ -42,10 +52,15 @@
     Interfaz: es una conexión entre dos sistemas dando una comunicación en distintos niveles\\
     Protocolo: Conjunto de reglas y estándares que controlan la comunicación entre sistemas\\
 \item Explique en que consiste el proceso de encapsulamiento del mensaje\\
+    El encapsulamiento rodea los datos con la información de protocolo necesaria antes de que se una al tránsito de la red.
+    Por lo tanto, a medida que los datos se desplazan a través de las capas del modelo reciben encabezados, información final y otros
+    tipos de información.\\
+    Una vez que se envían los datos desde el origen, viajan a través de la capa de aplicación y recorren todas las demás capas en 
+    sentido descendente. El empaquetamiento y el flujo de los datos que se intercambian experimentan cambios a medida que las capas 
+    realizan sus funciones para los usuarios finales.\\
 
 \itemIndique En que capas del modelo OSI las unidades de datos de los protocolos se llaman segmento,
 frame, paquete y bits.\\
-
     REVISEN ESTO NO ESTOY MUY SEGURO D:
   Física -> Bits\\
   Enlace de red -> Paquete\\
