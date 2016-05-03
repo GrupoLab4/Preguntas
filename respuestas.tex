@@ -440,6 +440,15 @@ El estándar actualmente utilizado es el ANSI/TIA/EIA-568-B tanto la variante B1
 - ANSI/TIA/EIA-607\\
 - ANSI/TIA/EIA-758\\
 \item Explique lo que entiende por banda ISM. Indique los rangos de frecuencia en que se encuentran las distintas bandas ISM definidas, además de sus aplicaciones típicas.\\
+Son bandas de frecuencia para uso no comercial que operan en las frecuencias 902-928 MHz, 2,4-2,4835 GHz, 5,725-5,85 GHz, y por lo general se usan para teléfonos inalámbricos domesticos DECT, Bluetooth, y Wifi en redes locales.\\
+\item  ¿Cual es la diferencia entre paridad par y paridad impar?.\\
+En la paridad par se suman los 1 de la secuencia y si es impar se le agrega un 1 para que la suma sea par en caso de ser par se le agrega un 0, mientras que en la paridad impar si la suma de los 1 de la secuencia es par se le agrega un 1 para que la suma sea impar, en caso de ser impar se le agrega un 0 para que siga siendo impar\\
+\item ¿Qué tipo de error no puede ser detectado por los métodos basados en el bit de paridad?.\\
+No detecta cuando hay 2 errores en el grupo de bits ya que solo comprueba si es par o impar y al quitarle 2 bits queda igual que antes.\\
+\item Una manera de detectar errores es transmitir los datos como un bloque de n filas de k bits por fila y agregar bits de paridad a cada fila y a cada columna. La esquina inferior derecha es un bit de paridad que verifica su fila y su columna. ¿Detectara este esquema todos los errores sencillos? ¿Los errores dobles?, ¿Los errores triples?\\
+Este sistema detectaría los errores simples dobles y triples, pero no así los cuádruples ya que perdería un bloque cuadrado y no se daría cuenta de esto.\\
+\item  ¿Qué tipo de error no puede ser detectado con una suma de comprobación?\\
+
 
 
   
