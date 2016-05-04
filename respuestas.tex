@@ -300,10 +300,9 @@ y las funciones que cumplen.\\
     \item Calcule la máxima cantidad de frames que puede transmitir un nodo Ethernet en un canal de 10
     Mbps si en el campo de datos se tiene 46 bytes, no hay colisiones y el “gap” entre frames es de
     9.6 ms (12 bytes).\\
-    Nos dicen que el canal es de 10 Mbps, si lo pasamos a bits serian 10x10^6 b. También nos dan el tamaño del campo de datos del
-    frame de Ethernet el cual es de 46 B, por lo que el tamaño de todo el frame es de 84 B (contando los bytes del gap), los que
-    transformados a bits serían 84x8 = 672 b.\\
-    Entonces para calcular la máxima cantidad de frames que se pueden transmitir simplemente hay que dividir 10x10^6/672 = 14.880 b.
+    Nos dicen que el canal es de 10 Mbps, por lo tanto 10*10^6 bit/s, para saber cuantos bits pasan por 9,6 ms, multiplicamos a 
+    10*10^6 * (9,6/1000) lo cual da una cantidad de 96000 bits .Ahora dividimos esos bits por su campo. el cual es 46*8 bits. y nos 
+    queda que se transmiten 260 Frames como máximo.\\
     \item Una red de comunicaciones que opera a 10 Mbps sólo puede cursar una media de 10.000 frames por minuto. Sabiendo que el
     tamãno medio de cada frame es de 10.000 bits, calcule el rendimiento de esta red.\\
     Primero, transformamos los 10 Mbps a 10x10^6 b, nos dicen que puede cursar una media de 10.000 frames por minuto, lo que es igual
