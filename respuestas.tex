@@ -477,6 +477,95 @@ No detecta cuando hay 2 errores en el grupo de bits ya que solo comprueba si es 
 \item Una manera de detectar errores es transmitir los datos como un bloque de n filas de k bits por fila y agregar bits de paridad a cada fila y a cada columna. La esquina inferior derecha es un bit de paridad que verifica su fila y su columna. ¿Detectara este esquema todos los errores sencillos? ¿Los errores dobles?, ¿Los errores triples?\\
 Este sistema detectaría los errores simples dobles y triples, pero no así los cuádruples ya que perdería un bloque cuadrado y no se daría cuenta de esto.\\
 \item  ¿Qué tipo de error no puede ser detectado con una suma de comprobación?\\
+\item  De la Figura 1 responda lo siguiente(102):
+ a) Indique el número de dominios de colisiones y de dominios de broadcast. \\
+b) Si se envía un frame desde el PC0 al PC1. Indique las direcciones IPs y MACs del frame que se transmite entre el PC0 y el Switch1. Indique las direcciones IPs y MACs del frame que se transmite entre el Switch1 y el PC1.\\ 
+c) Si se envía un frame desde el PC0 al PC2. Indique las direcciones IPs y MACs del frame que se transmite entre el PC0 y el Switch1. Las direcciones IPs y MACs del frame que se transmite entre el Switch1 y el Switch0. Las direcciones IPs y MACs del frame entre el Switch0 y Switch2 y las direcciones IPs y MACs del frame entre el Switch2 y el PC2. \\
+d) Dibuje la tabla ARP del PC1. 
+e) Dibuje la tabla del Switch2.\\
+a) –Dominio broadcast: 1
+-Dominio de colisiones: 3
+b)PC0 -> Switch1
+Dst: -192.169.0.3
+-0090.0CCA.0332
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch1 -> PC1
+Dst: -192.169.0.3
+-0090.0CCA.0332
+Src: -192.168.0.2
+-0090.2116.3E68
+c)Pc0 ->Switch1
+Dst: -192.168.0.6
+-000D.BDB3.6989
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch1 ->Switch0
+Dst: -192.168.0.6
+-000D.BDB3.6989
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch0 ->Switch2
+Dst: -192.168.0.6
+-000D.BDB3.6989
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch2 ->PC2
+Dst: -192.168.0.6
+-000D.BDB3.6989
+Src: -192.168.0.2
+-0090.2116.3E68
+d) -192.168.0.2
+-0090.2116.3E68
+e) -192.168.0.6
+-000D.BDB3.6989
+\item De la Figura 2 responda lo siguiente(103): 
+a) Indique el número de dominios de colisiones y de dominios de broadcast. 
+b) Si se envía un frame desde el PC0 al PC1. Indique las direcciones IPs y MACs del frame que se transmite entre el PC0 y el Switch0. Indique las direcciones IPs y MACs del frame que se transmite entre el Switch0 y el PC1. 
+c) Si se envía un frame desde el PC0 al PC2. Indique las direcciones IPs y MACs del frame que se transmite entre el PC0 y el Switch0. Las direcciones IPs y MACs del frame que se transmite entre el Switch0 y el Router0. Las direcciones IPs y MACs del frame entre el Router0 y Switch1 y las direcciones IPs y MACs del frame entre el Switch1 y el PC2. 
+d) Dibuje la tabla ARP del PC1. 
+e) Dibuje la tabla ARP del PC2. 
+f) Dibuje la tabla del Switch1. 
+g) Dibuje la tabla del Switch2.
+a) Dominio de colisiones: 2
+Dominio Broadcast: 2
+b) b)PC0 -> Switch0
+Dst: -192.169.0.3
+-0090.0CCA.0332
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch0 -> PC1
+Dst: -192.169.0.3
+-0090.0CCA.0332
+Src: -192.168.0.2
+-0090.2116.3E68
+c)PC0 ->Switch0
+Dst: -192.168.1.4
+-0004.9A2C.B001
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch0 ->Router0
+Dst: -192.168.1.4
+-0004.9A2C.B001
+Src: -192.168.0.2
+-0090.2116.3E68
+Router0 -> Switch1
+Dst: -192.168.1.4
+-0004.9A2C.B001
+Src: -192.168.0.2
+-0090.2116.3E68
+Switch1 ->PC2
+Dst: -192.168.1.4
+-0004.9A2C.B001
+Src: -192.168.0.2
+-0090.2116.3E68
+d) -192.168.0.2
+-0090.2116.3E68
+e) -192.168.0.2
+-0090.2116.3E68
+f) -192.168.1.4
+-0004.9A2C.B001
+g) No hay Switch2
 
 
 
