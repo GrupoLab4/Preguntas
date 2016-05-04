@@ -350,9 +350,24 @@ y las funciones que cumplen.\\
             N es la potencia del ruido\\
     \item  Las condiciones de dise˜no de un sistema de comunicaciones que cuenta con un ancho de banda de 1MHz y presenta una SNR de 24dB es que alcance los 4Mbps.Indicar si este proyecto bajo las condiciones de ruido y ancho de banda es viable.(COMPLETAR) \\
     \item Un sistema de comunicaciones que posee un ancho de banda de 70 MHz y opera a 100 Mbps. Indicar la mínima SNR para que el sistema pueda funcionar(COMPLETAR) \\
-    \item  Compare la maxima capacidad del canal del par trenzado y el cable coaxial.\\Para el par trenzado el ancho de banda es de 100MHz y la SNR es de 20dB.Para el cable coaxial el ancho de banda es de 250 MHz y su SNR es de 22 dB. (COMPLETAR)\\
-    \item  ¿Cual es la capacidad para un canal de un teletipo de 300Hz de ancho de banda con una relacion senal a ruido de 3dB? (COMPLETAR)\\
-    \item Sea un canal con una capacidad de 20Mbps.El ancho de banda de dicho canal es 3MHz¿Cual es la relacion senal a ruido admisible para conseguir la mencionada capacidad? (COMPLETAR)\\
+    \item  Compare la maxima capacidad del canal del par trenzado y el cable coaxial. el par trenzado el ancho de banda es de 100MHz y la SNR es de 20dB.Para el cable coaxial el ancho de banda es de 250 MHz y su SNR es de 22 dB.\\
+    	-par trenzado:\\
+    		SNR=10*log10(S/N) implica que S/N es igual a 100.\\
+    		C=B*log2(S/N) ahora evaluamos, y C= 664385619 bits/s.\\
+    	-Cable coaxial:\\
+    		SNR=10*log10(S/N) implica que S/N es igual a 158  \\
+    		C=B*losg2(S/N) ahora evaluamos y C = 1825945187 bits/s\\
+    	Se puede asumir que el par trenzado tiene una capacidad mucho mas menor que la capacidad de el cable coaxial por la forma
+    	en la que este esta creado.
+    
+    \item  ¿Cual es la capacidad para un canal de un teletipo de 300Hz de ancho de banda con una relacion senal a ruido de 3dB? \\
+    		primero ocupamos la formula SNR(db)=10*log10(S/N). despejamos S/N y evaluamos 3db.dandonos S/N un valor de 2.Ahora 
+    		ocuparemos la formula C=B*log2(S/N) para calcular C. reemplazamos con S/N = 2 y B=300Hz dandonos una capacidad 
+    		de 300 bits/s
+    \item Sea un canal con una capacidad de 20Mbps.El ancho de banda de dicho canal es 3MHz¿Cual es la relacion senal a ruido 
+    	  admisible para conseguir la mencionada capacidad? (COMPLETAR)\\
+    	 	se ocupa la formula C=B*log2(S/N).despejamos S/N y reemplazamos C=20*10^6 y  B=3*10^6 Hz y nos da como resultado 
+    	 	S/N = 100
     \item  Un sistema de comunicaciones trabaja a 100 Mbps y utiliza un ancho de banda de 70 MHz ¿Cual es la cota inferior de la relacion SNR para que el sistema pueda funcionar?. Calcule la eﬁciencia espectral maxima que se puede alcanzar con una SNR de 0 dB. (COMPLETAR)\\
     \item En que se diferencias los medios guiados de transmision de los no guiados\\
     Que en los medios guiados la transmision de infirmacion se logra a traves de cables interconectados entre los equipos, mientrs que en los no guiados se realiza de manera inalambrica ya sea mediante antenas, las cuales emiten los datos en forma de señal electromagnetica\\
