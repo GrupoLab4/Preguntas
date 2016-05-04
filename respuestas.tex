@@ -307,9 +307,16 @@ y las funciones que cumplen.\\
     \item Calcule la máxima cantidad de frames que puede transmitir un nodo Ethernet en un canal de 10
     Mbps si en el campo de datos se tiene 46 bytes, no hay colisiones y el “gap” entre frames es de
     9.6 ms (12 bytes).\\
-    \item Una red de comunicaciones que opera a 10 Mbps sólo puede cursar una media de 10.000 fra-
-    mes por minuto. Sabiendo que el tama ̃no medio de cada frame es de 10.000 bits, calcule el
-    rendimiento de esta red.\\
+    Nos dicen que el canal es de 10 Mbps, si lo pasamos a bits serian 10x10^6 b. También nos dan el tamaño del campo de datos del
+    frame de Ethernet el cual es de 46 B, por lo que el tamaño de todo el frame es de 84 B (contando los bytes del gap), los que
+    transformados a bits serían 84x8 = 672 b.\\
+    Entonces para calcular la máxima cantidad de frames que se pueden transmitir simplemente hay que dividir 10x10^6/672 = 14.880 b.
+    \item Una red de comunicaciones que opera a 10 Mbps sólo puede cursar una media de 10.000 frames por minuto. Sabiendo que el
+    tamãno medio de cada frame es de 10.000 bits, calcule el rendimiento de esta red.\\
+    Primero, transformamos los 10 Mbps a 10x10^6 b, nos dicen que puede cursar una media de 10.000 frames por minuto, lo que es igual
+    a 167 frames por segundo aproximadamente, y además no dan el tamaño medio de cada frame, que es de 10.000 b.\\
+    Con todo esto si dividimos 10x10^6/10.000 nos dará la cantidad de frames que puede cursar pensando que el rendimiento fuera del
+    100 por ciento, entonces con regla de tres calculamos que el porcentaje de rendimiento que tenemos es de 16,7.
     \item Explique en qué consiste el protocolo ARP. Además de algún ejemplo de un ataque a la seguri-
     dad de dicho protocolo.\\
     El protocolo ARP es un estándar TCP/IP que asocia las direcciones IP y MAC de los equipos conectados a la red. Un ejemplo de
@@ -324,10 +331,9 @@ y las funciones que cumplen.\\
     \item Utilizando el software Wireshark se pide realizar la captura de una secuencia ARP. Identifique
     cada una de las etapas del proceso.\\
     
-    \item ¿Por qué debería existir menos colisiones en una red Ethernet conmutada comparada con una
-    red Ethernet tradicional?.\\
-    Por que en las redes conmutados los equipos no comparten un canal unico, en cambio las redes tradicionales se comparte el canal de
-    transmision \\
+    \item ¿Por qué debería existir menos colisiones en una red Ethernet conmutada comparada con una red Ethernet tradicional?.\\
+    Por que en las redes Ethernet conmutadas los equipos no comparten un canal único, en cambio las redes tradicionales se comparte el
+    canal de transmisión \\
     \item Compare las tasas de transmision de datos para la red Ethernet tradicional, Fast Ethernet y Gigabit Ethernet\\
     La tasa de transmision de la Ethernet normal es de 10Mbps, la de Fast Ethernet es de 100Mbps, y la Gigabit Ethernet es de 1Gbps\\
     \item Indique la conﬁguracion de pines en conectores RJ45 para cables UTP cruzados FastEthernet y GigabitEthernet(falta)\\
